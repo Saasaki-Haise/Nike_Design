@@ -1,7 +1,13 @@
 body {
     margin: 0;
 }
+/*     TITRE     */
 
+.title {
+    font-size: xx-large;
+    margin-left: 90px;
+    font-weight: lighter;
+}
 /* HEADER */
 header {
     display: flex;
@@ -19,7 +25,6 @@ header img {
 
 header #menu {
     margin: 10px;
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     width: 450px;
@@ -44,14 +49,12 @@ header #menu a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid pink;
     position: relative;
 }
 #banniere div {
     position: absolute;
     top: 75%;
     right: 58%;
-    border: 1px solid black;
     color: white;
 }
 
@@ -63,43 +66,44 @@ header #menu a {
     margin: 20px;
     height: 670px;
 }
-
-
-
-
-/* HOMME */
-#homme {
-    border: 1px solid green;
-    height: 500px;
+/* COLLECTION */
+#collection {
+    border: 1px solid black;
     display: flex;
-    justify-content: space-evenly;
-}
-#homme .bloc {
-    border: 1px solid pink;
-}
-#homme img {
-    height: 400px;
-}
-
-/* FEMME */
-#femme {
-    border: 1px solid purple;
-    height: 460px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* KIDS */
-#kids {
-    height: 400px;
+    justify-content: center;
     position: relative;
 }
 
-#kids img{
-    width: 100%;
-    height: 350px;
+#collection .bloc img {
+    height: 540px;
+    margin: 5px;
+}
+#collection .bloc p {
+    margin-left: 10%;
+    font-size: large;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    width: 100px;
+    height: auto;
+    background-color: white;
+}
+#collection .bloc p:hover {
+    opacity: 0.6;
+}
+/* HOMME */
+#homme {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
 }
 
+#homme img {
+    height: 400px;
+}
 /* FOOTER */
 footer {
     display: flex;
